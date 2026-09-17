@@ -10,13 +10,14 @@
 <body>
 
     <header>
-        <h1>Locais</h1>
+        <h1>Home</h1>
 
         <nav>
             <ul style="list-style-type: square;">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./locais.html">Locais</a></li>
-                <li><a href="#">Item-2</a></li>
-                <li><a href="#">Item-3</a></li>
+                <li><a href="./detalhes.html">Detalhes</a></li>
+                <li><a href="./paginas/pagina1.html">Pagina1</a></li>
             </ul>
         </nav>
     </header>
@@ -75,10 +76,25 @@
                     name="enviar"
                     value="Enviar"
                 >
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label for="email">Email:</label>
+
+                    <input type="email" id="email" name="email" placeholder="Digite seu email">
+
+                    <textarea name="comentario" placeholder="Digite seu comentário"></textarea>
+
+                    <input type="submit" name="enviar" value="Enviar">
+
+                </fieldset>
+
 
             </form>
 
         </div>
+
+        <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+
     </footer>
 
 </body>
