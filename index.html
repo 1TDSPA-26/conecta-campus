@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,66 +7,76 @@
   </head>
 
   <body>
-    <header style="background-color: #0000; color:#ffffff">
-      <h1>Home</h1>
-      <nav>
+    <header style="background-color: #000; color: #fff">
+      <h1>Conecta Campus</h1>
 
+      <nav aria-label="Navegação principal">
         <ul style="list-style: none">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./locais.html">Locais</a></li>
-            <li><a href="./detalhes.html">Detalhes</a></li>
-            <li><a href="./paginas/pagina1.html">Pagina1</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./locais.html">Locais</a></li>
+          <li><a href="./detalhes.html">Detalhes</a></li>
+          <li><a href="./paginas/pagina1.html">Página 1</a></li>
         </ul>
-
-    </nav>
+      </nav>
     </header>
 
     <main>
       <section>
-        <h2>Conteúdo da Página</h2>
+        <h2>Conteúdo da página</h2>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut
-          error autem omnis, sed explicabo voluptate a ipsa blanditiis quo,
-          earum alias! Hic nostrum libero quibusdam quidem ipsa fugiat minus
-          laboriosam nulla, non a numquam iure minima illum praesentium iusto
-          consequatur vel culpa dolore! Provident vero odio autem eveniet
-          quibusdam!
+          error autem omnis, sed explicabo voluptate a ipsa blanditiis quo.
         </p>
-        <img src="./img/falkenpost-peabody-institute-1629259_640.jpg" alt="Campus Oficial" width="100%">
-        <a href="#">mais...</a>
+
+        <img
+          src="./img/falkenpost-peabody-institute-1629259_640.jpg"
+          alt="Vista do campus"
+          style="width: 100%; height: auto"
+        />
+
+        <a href="./detalhes.html">Mais...</a>
       </section>
+
       <article>
-        <h2>Coisas a parte</h2>
+        <h2>Conteúdos relacionados</h2>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem, eveniet animi! Mollitia maxime quae, rerum corrupti at
-          hic. Nulla repellendus velit ad voluptatem nobis dolore fugiat,
-          cupiditate ipsum repellat harum odit adipisci numquam amet inventore?
+          Exercitationem, eveniet animi!
         </p>
-        <a href="#">mais...</a>
+
+        <a href="./detalhes.html">Mais...</a>
       </article>
     </main>
 
     <footer>
-      <div>
-        <form>
-          <fieldset>
-            <legend>Contato</legend>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contato</legend>
 
-            <label for="">email:</label>
-            <input type="email" name="email" placeholder="Digite seu email" />
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
 
-            <label for="">comentário:</label>
-            <textarea
-              name="comentario"
-              placeholder="Digite seu comentário"
-            ></textarea>
+          <label for="comentario">Comentário:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            placeholder="Digite seu comentário"
+            required
+          ></textarea>
 
-            <input type="submit" name="enviar" value="Enviar" />
-          </fieldset>
-        </form>
-      </div>
-      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+
+      <p>&copy; 2026 — Todos os direitos reservados — Conecta Campus</p>
     </footer>
   </body>
 </html>
