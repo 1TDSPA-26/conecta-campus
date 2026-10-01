@@ -1,68 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conecta Campus</title>
-</head>
-<style>
-    header {
-        background-color: "#000000";
-        color: "#ffffff";
-    }
-</style>
+  </head>
 
-<body>
-    <header style="background-color: #000000; color: #ffffff;">
-        <h1>Locais</h1>
-        <nav>
-            <ul style="list-style: none">
-                <li><a href="./locais.html">Locais</a></li>
-                <li><a href="./detalhes.html">Detalhes</a></li>
-                <li><a href="./Index.html">Home</a></li>
-                <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-            </ul>
+  <body>
 
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a
+          class="marca"
+          href="index.html"
+          aria-label="Conecta Campus - página inicial"
+          >Conecta Campus</a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li class="menu-li"><a aria-current="page" href="./index.html">Início</a></li>
+            <li class="menu-li"><a href="./locais.html">Locais</a></li>
+            <li class="menu-li"><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
-    <main>
-        <section>
-            <h2>Conteúdo da pagina</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi cum veritatis, dignissimos,
-                minus voluptatem eligendi voluptatibus voluptates enim modi at sunt. Provident, dignissimos odit impedit
-                vel natus vitae delectus hic distinctio laboriosam fugiat quidem magnam cumque quos! Aliquam,
-                repudiandae deserunt numquam dolorem praesentium sunt dolorum explicabo illo fugiat ipsa!</p>
-            <a> href="#">mais...</a>
-        </section>
-        <article>
-            <h2>Coisas a parte</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita deleniti veniam libero qui
-                eligendi quidem aspernatur. Eius cumque officiis mollitia doloribus quaerat nam animi sequi, quos
-                voluptatem sit nesciunt. Maxime, vel ducimus! Quae, ea molestias! Perferendis perspiciatis laborum quam
-                dolorem soluta esse at? Incidunt temporibus pariatur optio deserunt maxime!</p>
-            <a> href="#">mais...</a>
-        </article>
-    </main>
-    <footer>
-        <div>
-            <form>
 
-                <fieldset>
-                    <legend>Contado</legend>
-                    <label> for="">email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email">
-
-                    <textarea name="comentario" placeholder="Digite seu comentario"></textarea>
-                    <input type="submit" name="enviar" value="email">
-                </fieldset>
-            </form>
-
+    <main id="principal">
+      <section id="principal" class="pagina-topo" aria-labelledby="titulo-locais">
+        <div class="container">
+          <p class="etiqueta">Guia do campus</p>
+          <h1 id="titulo-locais">Locais e serviços</h1>
+          <p>Compare informações essenciais antes de escolher seu destino.</p>
         </div>
-        <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-    </footer>
-</body>
+      </section>
 
+      <section class="secao" aria-label="Lista de locais">
+        <div class="container grade-locais">
+          <article class="cartao">
+            <img
+              src="./img/biblioteca-campus.png"
+              alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Estudo</p>
+              <h2>Biblioteca Central</h2>
+              <p>Bloco B, térreo · 8h às 21h</p>
+              <a href="./detalhes.html">Abrir detalhes</a>
+            </div>
+          </article>
+
+          <article class="cartao" id="laboratorio">
+            <img
+              src="./img/laboratorio-informatica.png"
+              alt="Laboratório com computadores organizados em fileiras e corredor livre"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Tecnologia</p>
+              <h2>Laboratório de Informática</h2>
+              <p>Bloco C, sala 204 · 13h às 22h</p>
+              <span class="estado">Detalhes em preparação</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img
+              src="./img/rota-acessivel.png"
+              alt="Entrada de prédio com rampa de inclinação suave e corrimãos contínuos"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Acessibilidade</p>
+              <h2>Entrada principal</h2>
+              <p>Rampa, corrimãos e circulação livre</p>
+              <a href="./detalhes.html#orientacao">Ver orientação</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Contato</legend>
+
+            <label for="">email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" />
+
+            <label for="">comentário:</label>
+            <textarea
+              name="comentario"
+              placeholder="Digite seu comentário"
+            ></textarea>
+
+            <input type="submit" name="enviar" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+    </footer>
+  </body>
 </html>
-<img src="img/biblioteca-campus.png" alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
-    width="1536" height="1024" />
