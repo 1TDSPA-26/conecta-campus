@@ -2,67 +2,55 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta Campus</title>
 </head>
 
-<body>
+ <body>
+        <header background-color="rgb(0, 0, 0);color: rgb(255, 255, 255);">
+             <h1>home</h1>
+        <nav aria-label="Navegação Principal">
+           
+        <ul style="list-style: none;">
+             <li><a href="./index.html">Home</a></li>
+             <li><a href="./detalhes.html">Detalhes</a></li>
+             <li><a href="./locais.html">Locais</a></li>
+             <li><a href="./paginas/pagina1.html">Pagina1</a></li>
+        </ul>    
+            
+        </nav>  
+        </header>
+             
+        <main>
+            <section>
+                <h2>Conteúdo de Página</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi voluptatum, a officia maxime doloremque voluptatibus praesentium, quo aperiam quae unde voluptates deserunt placeat saepe ratione omnis sed dolor minus?</p>
+                <img src="./img/biblioteca-campus.png" alt="interior da biblioteca com estantes, mesas de estudo e corredor central" width="100%">
+            </section>
+            <article>
+                <h2>Coisas a parte</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi consequatur, nam veniam odit repellendus iusto, molestias error minus, iure dicta. Perspiciatis odio ratione, debitis dolor minus repellendus quis earum!</p>
+            </article>
+        </main>
+        <footer>
+            <div>
+                <form>
 
-      <header style="background-color: rgb(0, 0, 0);color: rgb(255, 255, 255)">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <label for="">email:</label>
+                        <input type="email" name="email" placeholder="Digite seu email">
+    
+                        <label for="">comentário:</label>
+                        <textarea name="comentario" placebor="Digite seu comentário"></textarea>
+                        
+                        <input type="submit" name="enviar" value="Enviar">
+                    </fieldset>
 
-    </header>
-
-    </style=>
-        <h1>Home</h1>
-        <nav>
-            <ul style="list-style: none">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./locais.html">Locais</a></li>
-                <li><a href="./detalhes.html">Detalhes</a></li>
-                <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Conteúdo da Página</h2>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure odio blanditiis! Id, labore. Ipsum
-                ea voluptates corporis possimus atque cupiditate placeat expedita. Nemo harum voluptatum porro vitae,
-                veritatis tenetur.
-            </p>
-
-            <img src="./img/img.01.falkenpost-peabody-institute-1629259_640.jpg" alt="Campus Oficial" width="1600">
-        </section>
-        <article>
-            <h2>Coisas a parte</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure odio blanditiis! Id, labore. Ipsum
-                ea voluptates corporis possimus atque cupiditate placeat expedita. Nemo harum voluptatum porro vitae,
-                veritatis tenetur.</p>
-        </article>
-    </main>
-
-    <footer>
-        <div>
-            <form>
-
-                <fieldset>
-                    <legend>Contato</legend>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email">
-
-                    <label for="comentário">:</label>
-                    <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
-
-                    
-
-            </form>
-        </div>
-        <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus.</p>
+                </form>
+            </div>
+            <p>&copy: 2026 - Todos os direitos reservados - Conecta Campus</p>
     </footer>
 </body>
 
