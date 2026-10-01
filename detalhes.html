@@ -1,66 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conecta Campus</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conecta Campus</title>
 
-        <style>
-            
-            header{
-                background-color: black;
-                color: white;
-            }
+  </head>
 
-        </style>
+  <body>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a
+          class="marca"
+          href="index.html"
+          aria-label="Conecta Campus - página inicial"
+          >Conecta Campus</a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a aria-current="page" href="./index.html">Início</a></li>
+            <li><a href="./locais.html">Locais</a></li>
+            <li><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    </head>
+    <main>
+         <article class="detalhe container">
+        <a class="link-voltar" href="locais.html">← Voltar para locais</a>
 
-    <body>
-       <header>
-            <h1>Detalhes</h1>
-            <nav>
-                <ul style="list-style: none;">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./locais.html">Locais</a></li>
-                    <li><a href="./detalhes.html">Detalhes</a></li>
-                    <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-                </ul>
-
-            </nav>
+        <header class="detalhe-cabecalho">
+          <div>
+            <p class="etiqueta">Estudo</p>
+            <h1>Biblioteca Central</h1>
+            <p>Bloco B, térreo · segunda a sexta, das 8h às 21h</p>
+          </div>
+          <img
+            src="./img/biblioteca-campus.png"
+            alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
+            width="1536"
+            height="1024"
+          />
         </header>
 
-        <main>
-            <section>
-                <h2>Conteúdo da Página</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ut, fuga maiores voluptate tenetur iusto est odit hic perferendis et iste adipisci reiciendis repellendus ipsam, consectetur recusandae officiis alias quidem? Delectus sunt repellendus exercitationem corporis eos facilis recusandae consequuntur ipsam eius! Laudantium et odit reprehenderit error repellat sunt voluptatem ipsum!</p>
-                <a href="#">mais...</a>
-            </section>
-            <article>
-                <h2>Coisas que a parte</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint, quo est quasi accusantium voluptates porro qui, laboriosam perspiciatis ex doloremque magni eos voluptas aut, explicabo quidem. Veritatis quas quae unde beatae minus, sapiente architecto.</p>
-                <a href="#">mais...</a>
-            </article>
-       </main>
-       
-       <footer>
-            <div>
-                <form>
+        <section class="painel" aria-labelledby="titulo-recursos">
+          <h2 id="titulo-recursos">Recursos disponíveis</h2>
+          <ul class="lista-recursos">
+            <li>Mesas individuais e coletivas</li>
+            <li>Computadores para consulta</li>
+            <li>Empréstimo e devolução de livros</li>
+            <li>Entrada acessível pelo corredor norte</li>
+          </ul>
+        </section>
 
-                    <fieldset>
-                        <legend>Contato</legend>
+        <section class="painel" id="orientacao" aria-labelledby="titulo-orientacao">
+          <h2 id="titulo-orientacao">Orientação de chegada</h2>
+          <p>Clique no botão para exibir ou ocultar o trajeto detalhado.</p>
 
-                        <label for="">email:</label>
-                        <input type="email" name="email" placeholder="Digite seu email">
-    
-                        <label for="">comentário:</label>
-                        <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
-                        <input type="submit" name="enviar" value="Enviar">
-                    </fieldset>
+          <!-- aria-expanded comunica o estado do conteúdo controlado. -->
+          <button
+            class="botao"
+            id="botao-orientacao"
+            type="button"
+            aria-expanded="false"
+            aria-controls="painel-orientacao"
+          >
+            Mostrar orientação
+          </button>
 
-                </form>
-            </div>
-            <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-       </footer> 
-    </body>
+          <!-- hidden faz o navegador iniciar com este conteúdo oculto. -->
+          <div class="orientacao" id="painel-orientacao" hidden>
+            <p>
+              Entre pelo portão principal, siga até o Bloco B e use a rampa do
+              corredor norte. A biblioteca fica após a segunda porta à direita.
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Contato</legend>
+
+            <label for="">email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" />
+
+            <label for="">comentário:</label>
+            <textarea
+              name="comentario"
+              placeholder="Digite seu comentário"
+            ></textarea>
+
+            <input type="submit" name="enviar" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+    </footer>
+  </body>
 </html>

@@ -1,64 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conecta Campus</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conecta Campus</title>
+  </head>
 
-        <style>
-            header {
-                background-color: black;
-                color: white;
-            }
-        </style>
+  <body>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a
+          class="marca"
+          href="index.html"
+          aria-label="Conecta Campus - página inicial"
+          >Conecta Campus</a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a aria-current="page" href="./index.html">Início</a></li>
+            <li><a href="./locais.html">Locais</a></li>
+            <li><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    </head>
+    <main>
+      <section class="pagina-topo" aria-labelledby="titulo-locais">
+        <div class="container">
+          <p class="etiqueta">Guia do campus</p>
+          <h1 id="titulo-locais">Locais e serviços</h1>
+          <p>Compare informações essenciais antes de escolher seu destino.</p>
+        </div>
+      </section>
 
-    <body>
-       <header>
-            <h1>Locais</h1>
-            <nav>
-                <ul style="list-style: none;">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./locais.html">Locais</a></li>
-                    <li><a href="./detalhes.html">Detalhes</a></li>
-                    <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-                </ul>
-
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h2>Conteúdo da Página</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ut, fuga maiores voluptate tenetur iusto est odit hic perferendis et iste adipisci reiciendis repellendus ipsam, consectetur recusandae officiis alias quidem? Delectus sunt repellendus exercitationem corporis eos facilis recusandae consequuntur ipsam eius! Laudantium et odit reprehenderit error repellat sunt voluptatem ipsum!</p>
-                <a href="#">mais...</a>
-            </section>
-            <article>
-                <h2>Coisas que a parte</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint, quo est quasi accusantium voluptates porro qui, laboriosam perspiciatis ex doloremque magni eos voluptas aut, explicabo quidem. Veritatis quas quae unde beatae minus, sapiente architecto.</p>
-                <a href="#">mais...</a>
-            </article>
-       </main>
-       
-       <footer>
-            <div>
-                <form>
-
-                    <fieldset>
-                        <legend>Contato</legend>
-
-                        <label for="">email:</label>
-                        <input type="email" name="email" placeholder="Digite seu email">
-    
-                        <label for="">comentário:</label>
-                        <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
-                        <input type="submit" name="enviar" value="Enviar">
-                    </fieldset>
-
-                </form>
+      <section class="secao" aria-label="Lista de locais">
+        <div class="container grade-locais">
+          <article class="cartao">
+            <img
+              src="./img/biblioteca-campus.png"
+              alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Estudo</p>
+              <h2>Biblioteca Central</h2>
+              <p>Bloco B, térreo · 8h às 21h</p>
+              <a href="./detalhes.html">Abrir detalhes</a>
             </div>
-            <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-       </footer> 
-    </body>
+          </article>
+
+          <article class="cartao" id="laboratorio">
+            <img
+              src="./img/laboratorio-informatica.png"
+              alt="Laboratório com computadores organizados em fileiras e corredor livre"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Tecnologia</p>
+              <h2>Laboratório de Informática</h2>
+              <p>Bloco C, sala 204 · 13h às 22h</p>
+              <span class="estado">Detalhes em preparação</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img
+              src="./img/rota-acessivel.png"
+              alt="Entrada de prédio com rampa de inclinação suave e corrimãos contínuos"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Acessibilidade</p>
+              <h2>Entrada principal</h2>
+              <p>Rampa, corrimãos e circulação livre</p>
+              <a href="./detalhes.html#orientacao">Ver orientação</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Contato</legend>
+
+            <label for="">email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" />
+
+            <label for="">comentário:</label>
+            <textarea
+              name="comentario"
+              placeholder="Digite seu comentário"
+            ></textarea>
+
+            <input type="submit" name="enviar" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+    </footer>
+  </body>
 </html>

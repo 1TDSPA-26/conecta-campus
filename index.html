@@ -1,57 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conecta Campus</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conecta Campus</title>
+  </head>
 
-    <body>
-       <header style="background-color: rgb(0, 0, 0);color: rgb(255, 255, 255)">
-            <h1>Home</h1>
-            <nav>
-                <ul style="list-style: none;">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./locais.html">Locais</a></li>
-                    <li><a href="./detalhes.html">Detalhes</a></li>
-                    <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-                </ul>
+  <body>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a
+          class="marca"
+          href="index.html"
+          aria-label="Conecta Campus - página inicial"
+          >Conecta Campus</a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a aria-current="page" href="./index.html">Início</a></li>
+            <li><a href="./locais.html">Locais</a></li>
+            <li><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-            </nav>
-        </header>
+    <main id="inicio">
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="container hero-conteudo">
+          <p class="etiqueta">Informação para circular com autonomia</p>
+          <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+          <p class="hero-texto">
+            Consulte localização, horário e recursos de acessibilidade antes de
+            sair.
+          </p>
+          <a class="botao" href="./locais.html">Explorar locais</a>
+        </div>
+      </section>
+      <article class="cartao">
+        <img
+          src="./img/biblioteca-campus.png"
+          alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
+          width="1536"
+          height="1024"
+        />
+        <div class="cartao-conteudo">
+          <p class="cartao-tipo">Estudo</p>
+          <h3>Biblioteca Central</h3>
+          <p>Bloco B, térreo · 8h às 21h</p>
+          <a href="./detalhes.html">Ver detalhes</a>
+        </div>
+      </article>
+    </main>
 
-        <main>
-            <section>
-                <h2>Conteúdo da Página</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ut, fuga maiores voluptate tenetur iusto est odit hic perferendis et iste adipisci reiciendis repellendus ipsam, consectetur recusandae officiis alias quidem? Delectus sunt repellendus exercitationem corporis eos facilis recusandae consequuntur ipsam eius! Laudantium et odit reprehenderit error repellat sunt voluptatem ipsum!</p>
-                <img src="./img/img-01-falkenpost-george-peabody-library-1629308_640.jpg" alt="Campus Oficial" width="50%">
-                <a href="#">mais...</a>
-            </section>
-            <article>
-                <h2>Coisas que a parte</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint, quo est quasi accusantium voluptates porro qui, laboriosam perspiciatis ex doloremque magni eos voluptas aut, explicabo quidem. Veritatis quas quae unde beatae minus, sapiente architecto.</p>
-                <a href="#">mais...</a>
-            </article>
-       </main>
-       
-       <footer>
-            <div>
-                <form>
+    <footer>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Contato</legend>
 
-                    <fieldset>
-                        <legend>Contato</legend>
-                        
-                        <label for="">email:</label>
-                        <input type="email" name="email" placeholder="Digite seu email">
-    
-                        <label for="">comentário:</label>
-                        <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
-                        <input type="submit" name="enviar" value="Enviar">
-                    </fieldset>
+            <label for="">email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" />
 
-                </form>
-            </div>
-            <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-       </footer> 
-    </body>
+            <label for="">comentário:</label>
+            <textarea
+              name="comentario"
+              placeholder="Digite seu comentário"
+            ></textarea>
+
+            <input type="submit" name="enviar" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+    </footer>
+  </body>
 </html>
