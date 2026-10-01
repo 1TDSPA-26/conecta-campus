@@ -1,132 +1,79 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conecta Campus</title>
-</head>
+  </head>
 
-<body>
-    <header style="background-color: #000000;color:#fff">
-        <h1>Home</h1>
-        <nav>
-            <ul style="list-style: none">
-                <li><a href="./index.html"> Home</a> </li>
-                <li><a href="./locais.html"> Locais </a> </li>
-                <li><a href="./detalhes.html"> Detalhes </a> </li>
-                <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-            </ul>
+  <body>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a
+          class="marca"
+          href="index.html"
+          aria-label="Conecta Campus - página inicial"
+          >Conecta Campus</a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a aria-current="page" href="./index.html">Início</a></li>
+            <li><a href="./locais.html">Locais</a></li>
+            <li><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-
-    <main>
-        <section>
-            <h2>Conteudo da pagina</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi reiciendis sunt fugit, excepturi
-                labore totam asperiores eos rem officia earum eius enim exercitationem corrupti doloribus quos
-                consequatur! Nisi eaque hic porro doloribus debitis eum perferendis quod libero illo. Quia, sequi dolor!
-                Animi officia tempore facere laudantium a tempora id!</p>
-
-            <img src="./img/img-01 falkenpost-peabody-institute-1629259.jpg" alt="Campus Oficial" width="100%" <a
-                href="#">mais...</a>
-        </section>
-        <article>
-            <h2>Coisas a parte</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo iste, nulla, pariatur id dolor officiis
-                optio est dolorum itaque inventore, excepturi accusantium quod! Sapiente id ad nulla quis voluptatem
-                unde.</p>
-            <a href="#">mais...</a>
-        </article>
-    </main>
-    <footer>
-        <div>
-            <form action="">
-
-                <fieldset>
-                    <legend>Contato</legend>
-
-                    <label for="">Email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email:">
-
-                    <label for="">Comentário</label>
-                    <textarea name="comentário" id="" placeholder="Digite seu comentário"></textarea>
-
-                    <input type="submit" name="Enviar" value="Enviar">
-
-                </fieldset>
-
-            </form>
+    <main id="inicio">
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="container hero-conteudo">
+          <p class="etiqueta">Informação para circular com autonomia</p>
+          <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+          <p class="hero-texto">
+            Consulte localização, horário e recursos de acessibilidade antes de
+            sair.
+          </p>
+          <a class="botao" href="./locais.html">Explorar locais</a>
         </div>
-        <p>&copy;2026 - Todos os direitos reservados - Conecta Campus </p>
-    </footer>
-
-=======
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta Campus</title>
-</head>
-
-<body>
-    <header style="background-color: #000000;color:#fff">
-        <h1>Home</h1>
-        <nav>
-            <ul style="list-style: none">
-                <li><a href="./index.html"> Home</a> </li>
-                <li><a href="./locais.html"> Locais </a> </li>
-                <li><a href="./detalhes.html"> Detalhes </a> </li>
-                <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-        <section>
-            <h2>Conteudo da pagina</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi reiciendis sunt fugit, excepturi
-                labore totam asperiores eos rem officia earum eius enim exercitationem corrupti doloribus quos
-                consequatur! Nisi eaque hic porro doloribus debitis eum perferendis quod libero illo. Quia, sequi dolor!
-                Animi officia tempore facere laudantium a tempora id!</p>
-
-            <img src="./img/img-01 falkenpost-peabody-institute-1629259.jpg" alt="Campus Oficial" width="100%" <a
-                href="#">mais...</a>
-        </section>
-        <article>
-            <h2>Coisas a parte</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo iste, nulla, pariatur id dolor officiis
-                optio est dolorum itaque inventore, excepturi accusantium quod! Sapiente id ad nulla quis voluptatem
-                unde.</p>
-            <a href="#">mais...</a>
-        </article>
-    </main>
-    <footer>
-        <div>
-            <form action="">
-
-                <fieldset>
-                    <legend>Contato</legend>
-
-                    <label for="">Email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email:">
-
-                    <label for="">Comentário</label>
-                    <textarea name="comentário" id="" placeholder="Digite seu comentário"></textarea>
-
-                    <input type="submit" name="Enviar" value="Enviar">
-
-                </fieldset>
-
-            </form>
+      </section>
+      <article class="cartao">
+        <img
+          src="./img/biblioteca-campus.png"
+          alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
+          width="1536"
+          height="1024"
+        />
+        <div class="cartao-conteudo">
+          <p class="cartao-tipo">Estudo</p>
+          <h3>Biblioteca Central</h3>
+          <p>Bloco B, térreo · 8h às 21h</p>
+          <a href="./detalhes.html">Ver detalhes</a>
         </div>
-        <p>&copy;2026 - Todos os direitos reservados - Conecta Campus </p>
-    </footer>
+      </article>
+    </main>
 
->>>>>>> c11515764bbd9147f00558e7580a23542b63c30f
+    <footer>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Contato</legend>
+
+            <label for="">email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" />
+
+            <label for="">comentário:</label>
+            <textarea
+              name="comentario"
+              placeholder="Digite seu comentário"
+            ></textarea>
+
+            <input type="submit" name="enviar" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
+    </footer>
+  </body>
 </html>
