@@ -18,48 +18,40 @@
                 <li><a href="./detalhes.html">Detalhes</a></li>
                 <li><a href="./paginas/pagina1.html">Pagina1</a></li>
             </ul>
-        </nav>
-    </header>
+        </nav aria-label="Navegação principal" </header>
 
-    <main>
-        <section>
-            <h2>Conteúdo da Página</h2>
+        <main id="inicio">
+            <section class="hero" aria-labelledby="titulo-principal">
+                <div class="container hero-conteudo">
+                    <p class="etiqueta">Informação para circular com autonomia</p>
+                    <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+                    <p class="hero-texto">
+                        Consulte localização, horário e recursos de acessibilidade antes de sair.
+                    </p>
+                    <a class="botao" href="locais.html">Explorar locais</a>
+                </div>
+            </section>
+        </main>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure odio blanditiis! Id, labore. Ipsum
-                ea voluptates corporis possimus atque cupiditate placeat expedita. Nemo harum voluptatum porro vitae,
-                veritatis tenetur.
-            </p>
+        <footer>
+            <div>
+                <form>
 
-            <img src="./img/img.01.falkenpost-peabody-institute-1629259_640.jpg" alt="Campus Oficial" width="1600">
-        </section>
-        <article>
-            <h2>Coisas a parte</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure odio blanditiis! Id, labore. Ipsum
-                ea voluptates corporis possimus atque cupiditate placeat expedita. Nemo harum voluptatum porro vitae,
-                veritatis tenetur.</p>
-        </article>
-    </main>
+                    <fieldset>
+                        <legend>Contato</legend>
 
-    <footer>
-        <div>
-            <form>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email">
 
-                <fieldset>
-                    <legend>Contato</legend>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email">
-
-                    <label for="comentário">:</label>
-                    <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
+                        <label for="comentário">:</label>
+                        <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
 
 
 
-            </form>
-        </div>
-        <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus.</p>
-    </footer>
+                </form>
+            </div>
+            <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus.</p>
+        </footer>
 </body>
 
 </html>
