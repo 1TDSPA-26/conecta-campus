@@ -7,44 +7,31 @@
   </head>
 
   <body>
-    <header style="background-color: rgb(0, 0, 0);color:rgb(255, 255, 255)">
-      <h1>Home</h1>
-      <nav>
-
-        <ul style="list-style: none">
-            <li><a href="./index.html">Home</a></li>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a class="marca" href="index.html" aria-label="Conecta Campus - página inicial">Conecta Campus</a>
+          <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a aria-current="page" href="./index.html">Início</a></li>
             <li><a href="./locais.html">Locais</a></li>
-            <li><a href="./detalhes.html">Detalhes</a></li>
-            <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-        </ul>
-
-    </nav>
+            <li><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Conteúdo da Página</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut
-          error autem omnis, sed explicabo voluptate a ipsa blanditiis quo,
-          earum alias! Hic nostrum libero quibusdam quidem ipsa fugiat minus
-          laboriosam nulla, non a numquam iure minima illum praesentium iusto
-          consequatur vel culpa dolore! Provident vero odio autem eveniet
-          quibusdam!
-        </p>
-        <img src="./img/img-01-falkenpost-peabody-institute-1629259_640.jpg" alt="Campus Oficial" width="100%">
-        <a href="#">mais...</a>
+    <main id="inicio">
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="container hero-conteudo">
+          <p class="etiqueta">Informação para circular com autonomia</p>
+          <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+          <p class="hero-texto">
+            Consulte localização, horário e recursos de acessibilidade antes de
+            sair.
+          </p>
+          <a class="botao" href="./locais.html">Explorar locais</a>
+        </div>
       </section>
-      <article>
-        <h2>Coisas a parte</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem, eveniet animi! Mollitia maxime quae, rerum corrupti at
-          hic. Nulla repellendus velit ad voluptatem nobis dolore fugiat,
-          cupiditate ipsum repellat harum odit adipisci numquam amet inventore?
-        </p>
-        <a href="#">mais...</a>
-      </article>
     </main>
 
     <footer>
