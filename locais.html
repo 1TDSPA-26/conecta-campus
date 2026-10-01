@@ -7,43 +7,82 @@
   </head>
 
   <body>
-    <header>
-      <h1>Locais</h1>
-      <nav>
-
-        <ul style="list-style: none">
-            <li><a href="./index.html">Home</a></li>
+    
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a
+          class="marca"
+          href="index.html"
+          aria-label="Conecta Campus - página inicial"
+          >Conecta Campus</a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a aria-current="page" href="./index.html">Início</a></li>
             <li><a href="./locais.html">Locais</a></li>
-            <li><a href="./detalhes.html">Detalhes</a></li>
-            <li><a href="./paginas/pagina1.html">Pagina1</a></li>
-        </ul>
-
-    </nav>
+            <li><a href="./detalhes.html">Acessibilidade</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h2>Conteúdo da Página</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut
-          error autem omnis, sed explicabo voluptate a ipsa blanditiis quo,
-          earum alias! Hic nostrum libero quibusdam quidem ipsa fugiat minus
-          laboriosam nulla, non a numquam iure minima illum praesentium iusto
-          consequatur vel culpa dolore! Provident vero odio autem eveniet
-          quibusdam!
-        </p>
-        <a href="#">mais...</a>
+      <section class="pagina-topo" aria-labelledby="titulo-locais">
+        <div class="container">
+          <p class="etiqueta">Guia do campus</p>
+          <h1 id="titulo-locais">Locais e serviços</h1>
+          <p>Compare informações essenciais antes de escolher seu destino.</p>
+        </div>
       </section>
-      <article>
-        <h2>Coisas a parte</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem, eveniet animi! Mollitia maxime quae, rerum corrupti at
-          hic. Nulla repellendus velit ad voluptatem nobis dolore fugiat,
-          cupiditate ipsum repellat harum odit adipisci numquam amet inventore?
-        </p>
-        <a href="#">mais...</a>
-      </article>
+
+      <section class="secao" aria-label="Lista de locais">
+        <div class="container grade-locais">
+          <article class="cartao">
+            <img
+              src="./img/biblioteca-campus.png"
+              alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Estudo</p>
+              <h2>Biblioteca Central</h2>
+              <p>Bloco B, térreo · 8h às 21h</p>
+              <a href="./detalhes.html">Abrir detalhes</a>
+            </div>
+          </article>
+
+          <article class="cartao" id="laboratorio">
+            <img
+              src="./img/laboratorio-informatica.png"
+              alt="Laboratório com computadores organizados em fileiras e corredor livre"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Tecnologia</p>
+              <h2>Laboratório de Informática</h2>
+              <p>Bloco C, sala 204 · 13h às 22h</p>
+              <span class="estado">Detalhes em preparação</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img
+              src="./img/rota-acessivel.png"
+              alt="Entrada de prédio com rampa de inclinação suave e corrimãos contínuos"
+              width="1536"
+              height="1024"
+            />
+            <div class="cartao-conteudo">
+              <p class="cartao-tipo">Acessibilidade</p>
+              <h2>Entrada principal</h2>
+              <p>Rampa, corrimãos e circulação livre</p>
+              <a href="./detalhes.html#orientacao">Ver orientação</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
