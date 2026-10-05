@@ -1,59 +1,139 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta Campus</title>
+    <title>Detalhes - Conecta Campus</title>
 </head>
 
 <body>
+
     <header>
-        <h1>Detalhes</h1>
-        <nav>
-             <ul>
-                <li><a href=".\index.html">home</a> </li>
-                <li><a href=".\locais.html">locais</a>
-                <li><a href=".\paginas/pagina1.html">pagina01</a></li>
-            </u>
+        <h1>Conecta Campus</h1>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="locais.html">Locais</a></li>
+                <li>
+                    <a href="detalhes.html" aria-current="page">
+                        Detalhes
+                    </a>
+                </li>
+            </ul>
         </nav>
-
     </header>
-    <main>
-        <section>
-            <h2>Conteudo da pagina</h2>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore qui eum dolore ad repellat distinctio
-                magnam laboriosam architecto, suscipit asperiores odit dignissimos accusantium delectus dolorum
-                consequuntur molestiae officia assumenda aspernatur.</p>
-            <a href="#">mais...</a>
+    <main>
+
+        <section>
+            <h2>Detalhes dos locais</h2>
+
+            <article>
+                <h3>Biblioteca</h3>
+
+                <p>
+                    A biblioteca oferece um ambiente tranquilo
+                    para estudos, leitura e pesquisa.
+                </p>
+            </article>
+
+            <article>
+                <h3>Laboratório de Informática</h3>
+
+                <p>
+                    O laboratório é utilizado para aulas práticas,
+                    programação e desenvolvimento de projetos.
+                </p>
+            </article>
+
+            <article>
+                <h3>Rota Acessível</h3>
+
+                <p>
+                    A rota acessível facilita a circulação de
+                    pessoas com diferentes necessidades pelo campus.
+                </p>
+            </article>
         </section>
-        <article>
-            <h2>Coisas que a parte</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae possimus sed dolorum recusandae fuga
-                odit quos sit tenetur praesentium, ab reiciendis id provident magni unde, ex deserunt earum quidem!</p>
-                <a href="#">mais...</a>
-        </article>
-    </main>
-    <footer>
-        <div>
+
+        <section>
+            <h2>Orientação</h2>
+
+            <button
+                class="botao"
+                id="botao-orientacao"
+                type="button"
+                aria-expanded="false"
+                aria-controls="painel-orientacao">
+                Mostrar orientação
+            </button>
+
+            <div id="painel-orientacao" hidden>
+                <p>
+                    Utilize as informações desta página para
+                    localizar os espaços e conhecer suas
+                    características.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Entre em contato</h2>
+
             <form>
+
                 <fieldset>
-                    <legend>
-                        Contato
-                    </legend>
-                    
-                    <label for="">email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email">
-                    <textarea name="comentario" placeholder="Digite seu comentario"></textarea>
-                    <input type="submit" name=" enviar" value="Enviar">
+                    <legend>Informações de contato</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                    <br><br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        cols="30">
+                    </textarea>
+
+                    <br><br>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
                 </fieldset>
 
             </form>
-        </div>
-        <p>&copy; 2026 - Todos os direitos reservdos - Conecta Campus</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conecta Campus</p>
     </footer>
 
 </body>
 
 </html>
+```
