@@ -1,0 +1,29 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    font-size: 1rem;
+}
+/*
+    rem -- Puxa do HTML
+   
+    em  -- Puxa do pai direto/Logo acima
+   
+    px  -- Medida fix, melhor evitar
+   
+    %   -- Medida responsiva, utilize em cenários onde o elemento não depende apenas dele. A porcentagem sempre vai olhar para o elemento pai.
+    Ex: Se o elemento pai possui 1000px e você determina pro filho width:10%, este v ai adquirir 100px de largura, pois 10% de 1000 é = 100.
+ 
+    Medidas da view-port baseadas em %:
+    vw - view-width
+    vh - view-height
+    Estas medidas elas olham para a viewport/tela.
+    Ex: Imagine que a tela possua 1000px, se você estgiver em um elemento muito interno e colocar nele 10vw, isso será relativo a tela de 1000px e não ao elemento pai dele que possa ter uma tamanho menor.
+*/
+ 
