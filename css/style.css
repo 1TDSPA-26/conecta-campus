@@ -1,0 +1,91 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62%;/*62% de 16px é = 10px*/
+}
+
+body{
+    width: 99%;
+    height: 1040px;
+}
+
+header{
+    width: 100%;
+    font-size: 2rem;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+    rem -- Puxa do HTML
+    em  -- Puxa do pai direto/Logo acima
+    px  -- Medida fix, melhor evitar
+    %   -- Medida responsiva, utilize em cenários onde o elemento não depende 
+*/
+
+img{
+    width: 100%;
+}
+
+@media (max-width:320px){
+
+.cartao{
+    background-color: #8f8888;
+    padding: 5%;
+}
+
+ img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}   
+}
+
+@media (min-width:425px){
+    .menu{
+        width: 100%;
+        list-style: none;
+    }
+    
+    .menu li{
+        display: inline-block;
+        margin: 5% 0;
+    }
+
+    .menu li a{
+        display: block;
+        background-color: #fff;
+        color: #1e1e1e;
+        padding: 2%;
+        border-radius: 5px;
+        width: 11rem;
+        text-align: center;
+        font-size: 1.5rem;    
+    }
+}
+
+
+/*
+    rem -- Puxa do HTML
+    
+    em  -- Puxa do pai direto/Logo acima
+    
+    px  -- Medida fix, melhor evitar
+    
+    %   -- Medida responsiva, utilize em cenários onde o elemento não depende apenas dele. A porcentagem sempre vai olhar para o elemento pai.
+    Ex: Se o elemento pai possui 1000px e você determina pro filho width:10%, este v ai adquirir 100px de largura, pois 10% de 1000 é = 100.
+
+    Medidas da view-port baseadas em %:
+    vw - view-width
+    vh - view-height
+    Estas medidas elas olham para a viewport/tela.
+    Ex: Imagine que a tela possua 1000px, se você estgiver em um elemento muito interno e colocar nele 10vw, isso será relativo a tela de 1000px e não ao elemento pai dele que possa ter uma tamanho menor.
+*/
