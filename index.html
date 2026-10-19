@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta Campus</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+
+    
 </head>
 
 <body>
-    <header>
-        <h1>Conecta Campus FIAP</h1>
-        <nav>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+
+        <a class="marca" href="index.html">Conecta Campus FIAP</a>
+        <button 
+        class="botao-menu"
+        id="botao-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        >
+        <span>Menu</span> 
+        <span class="icone-menu" aria-hideen="true">☰</span>
+    </button>
+        <nav 
+        id="menu-principal"
+        class="navegacao-principal"
+        aria-label="Navegação principal"
+        >
     <ul class="menu">
         <li><a aria-current="page" href="./index.html">Home</a></li>
         <li><a href="./locais.html">Locais</a></li>
@@ -19,7 +38,8 @@
         <li><a href="./páginas/pagina1.html">Pagina1</a></li>
     </ul>
 </nav>
-    </header>
+</div>
+</header>
     <main class="container">
         <section>
             <h2>Locais em destaque</h2>
@@ -28,13 +48,27 @@
 
         <div class="grade-locais">
 
-
         <article class="cartao">
-            <img src="./img/image.jpg" alt="Imagem da Biblioteca Central">
+            <img src="./img/biblioteca-campus.png" alt="Interior da Biblioteca Central com mesas de estudo e estantes de livros">
             <h2>Biblioteca Central</h2>
             <p>Espaço disponível para estudo e consulta de livros.</p>
             <a href="./detalhes.html">Ver detalhes</a>
         </article>
+
+        <article class="cartao">
+            <img src="./img/laboratorio-informatica.png" alt="Laboratório de informática com computadores e mesas de estudo">
+            <h2>Laboratório de Informática</h2>
+            <p>Espaço equipado com computadores para aulas e atividades práticas.</p>
+            <a href="./detalhes.html">Ver detalhes</a>
+        </article>
+        
+        <article class="cartao">
+            <img src="./img/rota-acessivel.png" alt="Entrada do campus com rampa de acesso e corrimãos">
+    <h2>Rota Acessível</h2>
+
+    <p>Conheça os caminhos acessíveis para circular pelo campus com mais segurança e autonomia.</p>
+    <a href="./detalhes.html">Ver detalhes</a>
+</article>
 
     </div>
 
@@ -49,12 +83,13 @@
                     <legend>Contato</legend>
                     
                     
-                    <label> for="">email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email">
     
                     <textarea name="comentario" placeholder="Digite seu comentario"></textarea>
-                    <input type="submit" name="enviar" value="email" </form>
+                    <input type="submit" name="enviar" value="Enviar">
                 </fieldset>
+            </form>
                 
         </div>
         <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
@@ -62,6 +97,3 @@
 </body>
 
 </html>
-<img src="img/biblioteca-campus.png" alt="Interior da biblioteca com estantes, mesas de estudo e corredor central"
-    width="1536" height="1024" />
-tem menu de contexto

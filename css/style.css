@@ -30,14 +30,14 @@ body {
 img { 
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
-
-
-
 .container {
-    width: min(100% - 2rem, var(--largura-conteudo));
-    margin-inline: auto;
+    width: 92%;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -49,7 +49,6 @@ img {
     gap: 0.75rem 1.25rem;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .menu a[aria-current="page"] {
@@ -60,7 +59,7 @@ img {
 a:focus-visible,
 button:focus-visible {
     outline: 0.2rem solid #f2b705;
-    outline-offset: 02.rem;
+    outline-offset: 0.2rem;
 }
 
 
@@ -76,16 +75,75 @@ button:focus-visible {
     border: 0.0625rem solid var(--cor-borda);
     border-radius: 1rem;
     background: var(--cor-superficie);
+    padding: 1rem;
 }
 
 .cartao img{
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
+    border-radius: 0.5rem;
 }
 
 @media (min-width: 48rem) {
     .grade-locais {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.botao-menu {
+    display: inline-block;
+    border: 0.0625rem solid #d8e2ee;
+    border-radius: 0.4rem;
+    padding: 0.55rem 0.7rem;
+    background: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.navegacao-principal {
+    display: none;
+    margin-top: 0.75rem;
+}
+
+.navegacao-principal.menu-aberto {
+    display: block;
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.marca {
+    color: var(--cor-primaria-escura);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .marca {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    fieldset input,
+    fieldset textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
     }
 }
