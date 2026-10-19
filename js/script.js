@@ -1,7 +1,11 @@
 "use strict";
 
 let logo = document.getElementById("marca");
-logo.textContent = "Conecta Campus Alterado";
+
+
+logo.addEventListener("click" ,function(){
+  logo.textContent = "Conecta Campus Alterado";
+})
 // TODO v0.5: selecionar #botao-menu, #menu-principal e .icone-menu.
 // TODO v0.5: alternar a classe menu-aberto e atualizar aria-expanded.
 
