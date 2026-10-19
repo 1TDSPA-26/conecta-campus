@@ -1,0 +1,60 @@
+@media (min-width: 48rem) {
+    .marca {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .cabecalho nav {
+        display: inline-block;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin-right: 0.25rem;
+        margin-bottom: 0;
+    }
+
+    .hero {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .cartao {
+        display: inline-block;
+        width: 31.5%;
+        margin-right: 2%;
+        vertical-align: top;
+    }
+
+    .cartao:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .integrante {
+        max-width: 34rem;
+    }
+
+    form {
+        max-width: 46rem;
+    }
+}
+
+@media (min-width: 70rem) {
+    body {
+        font-size: 1.0625rem;
+    }
+
+    .secao {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+/* TODO v0.5: criar o menu mobile antes de iniciar Flexbox. */
+/* TODO v0.5: refatorar o cabeçalho com Flexbox. */
+/* TODO v0.5: substituir os cartões em inline-block por CSS Grid. */
