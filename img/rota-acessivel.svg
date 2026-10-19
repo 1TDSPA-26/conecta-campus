@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Rota acessível</title><desc id="descricao">Ilustração de uma rampa com corrimãos</desc>
+  <rect width="1200" height="720" fill="#fff7e6"/><text x="600" y="100" text-anchor="middle" font-family="Arial" font-size="46" fill="#172033">Rota acessível</text>
+  <polygon points="160,560 1040,560 1040,430 540,430" fill="#1457c5"/><g stroke="#0b2f6b" stroke-width="24" fill="none"><path d="M180 390 L520 250 L1030 250"/><path d="M180 390 L180 570 M520 250 L520 440 M1030 250 L1030 440"/></g>
+  <circle cx="350" cy="300" r="58" fill="#0b2f6b"/><path d="M350 365v130m0-70-80 105m80-105 95 55" stroke="#0b2f6b" stroke-width="30" fill="none" stroke-linecap="round"/>
+</svg>
+
