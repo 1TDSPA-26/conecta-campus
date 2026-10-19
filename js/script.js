@@ -4,7 +4,14 @@
 // TODO v0.5: selecionar #botao-menu, #menu-principal e .icone-menu.
 // TODO v0.5: alternar a classe menu-aberto e atualizar aria-expanded.
 
-let logo.
+//capturando o elemento em tempo de execução
+var logo = document.getElementById("marca")
+
+//atrelando um evento ao logo
+logo.addEventListener("click", function()[
+ //mudando o texto da logo
+logo.textContent = "Conecta Campus Alterado";
+]);
 
 // Atualiza o ano do rodapé quando o elemento existe.
 const anoAtual = document.querySelector("[data-ano-atual]");
