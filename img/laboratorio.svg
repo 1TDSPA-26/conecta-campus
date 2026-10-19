@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Laboratório</title><desc id="descricao">Ilustração de computadores em um laboratório</desc>
+  <rect width="1200" height="720" fill="#eef8f7"/><text x="600" y="100" text-anchor="middle" font-family="Arial" font-size="46" fill="#172033">Laboratório de Informática</text>
+  <g fill="#1457c5"><rect x="130" y="190" width="280" height="190" rx="18"/><rect x="460" y="190" width="280" height="190" rx="18"/><rect x="790" y="190" width="280" height="190" rx="18"/></g>
+  <g fill="#ffffff"><rect x="155" y="215" width="230" height="135"/><rect x="485" y="215" width="230" height="135"/><rect x="815" y="215" width="230" height="135"/></g>
+  <g fill="#0b2f6b"><rect x="245" y="380" width="50" height="100"/><rect x="575" y="380" width="50" height="100"/><rect x="905" y="380" width="50" height="100"/><rect x="180" y="480" width="180" height="28"/><rect x="510" y="480" width="180" height="28"/><rect x="840" y="480" width="180" height="28"/></g>
+</svg>
+
