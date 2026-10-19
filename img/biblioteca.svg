@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Biblioteca</title><desc id="descricao">Ilustração de estantes e mesas de estudo</desc>
+  <rect width="1200" height="720" fill="#eaf2ff"/><rect x="100" y="110" width="280" height="480" rx="20" fill="#1457c5"/><rect x="820" y="110" width="280" height="480" rx="20" fill="#1457c5"/>
+  <g fill="#ffffff"><rect x="140" y="160" width="200" height="35"/><rect x="140" y="240" width="200" height="35"/><rect x="140" y="320" width="200" height="35"/><rect x="860" y="160" width="200" height="35"/><rect x="860" y="240" width="200" height="35"/><rect x="860" y="320" width="200" height="35"/></g>
+  <rect x="455" y="390" width="290" height="55" rx="12" fill="#0b2f6b"/><rect x="500" y="445" width="22" height="110" fill="#0b2f6b"/><rect x="678" y="445" width="22" height="110" fill="#0b2f6b"/>
+  <text x="600" y="95" text-anchor="middle" font-family="Arial" font-size="46" fill="#172033">Biblioteca Central</text>
+</svg>
+
