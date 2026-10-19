@@ -1,0 +1,293 @@
+@import url("./break-points.css");
+
+/*
+RMXXXXXX-NOME COMPLETO
+RMXXXXXX-NOME COMPLETO
+*/
+
+html {
+  font-size: 16px;
+  --cor-fundo: #f4f7fb;
+  --cor-superficie: #ffffff;
+  --cor-texto: #172033;
+  --cor-primaria: #1457c5;
+  --cor-primaria-escura: #0b2f6b;
+  --cor-borda: #d8e2ee;
+  --cor-erro: #b42318;
+  --cor-sucesso: #067647;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--cor-primaria);
+}
+
+a:hover {
+  color: var(--cor-primaria-escura);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 0.2rem solid #f2b705;
+  outline-offset: 0.15rem;
+}
+
+.container {
+  width: 92%;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cabecalho {
+  background: var(--cor-superficie);
+  border-bottom: 0.0625rem solid var(--cor-borda);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.marca {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--cor-primaria-escura);
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.botao-menu {
+  display: none;
+}
+
+/* TODO v0.5: estilizar o botão e controlar a navegação no celular. */
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 0.35rem;
+}
+
+.menu a {
+  display: block;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+  background: #eaf2ff;
+  text-decoration: underline;
+}
+
+.hero {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #eaf2ff;
+}
+
+.hero h1 {
+  max-width: 18ch;
+  margin-top: 0.35rem;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.etiqueta {
+  color: var(--cor-primaria-escura);
+  font-weight: 700;
+}
+
+.botao {
+  display: inline-block;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--cor-primaria);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: var(--cor-primaria-escura);
+  color: #ffffff;
+}
+
+.secao {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cartao,
+.local-resumo,
+.integrante,
+form {
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  border: 0.0625rem solid var(--cor-borda);
+  border-radius: 0.75rem;
+  background: var(--cor-superficie);
+}
+
+.cartao-conteudo,
+.local-resumo,
+.integrante,
+form {
+  padding: 1.25rem;
+}
+
+.imagem-detalhe,
+.integrante img {
+  max-width: 38rem;
+  border-radius: 0.75rem;
+}
+
+.campo-formulario {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 0.0625rem solid #8b98a8;
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  background: #ffffff;
+  color: var(--cor-texto);
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.campo-invalido {
+  border-color: var(--cor-erro);
+}
+
+.mensagem-erro {
+  display: block;
+  min-height: 1.4rem;
+  margin-top: 0.2rem;
+  color: var(--cor-erro);
+  font-weight: 700;
+}
+
+.mensagem-status {
+  min-height: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.mensagem-status.sucesso {
+  color: var(--cor-sucesso);
+}
+
+.mensagem-status.erro {
+  color: var(--cor-erro);
+}
+
+.rodape {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background: var(--cor-primaria-escura);
+  color: #ffffff;
+}
+
+/* A página começa simples para telas pequenas. */
+@media (min-width: 48rem) {
+  .marca {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .cabecalho nav {
+    display: inline-block;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  .hero {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .cartao {
+    display: inline-block;
+    width: 31.5%;
+    margin-right: 2%;
+    vertical-align: top;
+  }
+
+  .cartao:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .integrante {
+    max-width: 34rem;
+  }
+
+  form {
+    max-width: 46rem;
+  }
+}
+
+@media (min-width: 70rem) {
+  body {
+    font-size: 1.0625rem;
+  }
+
+  .secao {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+
+/* TODO v0.5: criar o menu mobile antes de iniciar Flexbox. */
+/* TODO v0.5: refatorar o cabeçalho com Flexbox. */
+/* TODO v0.5: substituir os cartões em inline-block por CSS Grid. */
+
