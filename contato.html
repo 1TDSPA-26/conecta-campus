@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Campus | Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <!--
+  RMXXXXXX-NOME COMPLETO
+  RMXXXXXX-NOME COMPLETO
+  -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="marca" href="index.html">Conecta Campus</a>
+            <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false"
+                aria-controls="menu-principal">
+                <span>Menu</span>
+                <span class="icone-menu" aria-hidden="true">☰</span>
+            </button>
+            <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="detalhes.html">Acessibilidade</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="secao container">
+        <h1>Envie uma sugestão</h1>
+        <p>Informe um local ou serviço que deveria aparecer no Conecta Campus.</p>
+
+        <form id="formulario-contato" novalidate>
+            <div class="campo-formulario">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" aria-describedby="erro-nome">
+                <small class="mensagem-erro" id="erro-nome"></small>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email">
+                <small class="mensagem-erro" id="erro-email"></small>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto" aria-describedby="erro-assunto">
+                    <option value="">Selecione uma opção</option>
+                    <option value="novo-local">Novo local</option>
+                    <option value="acessibilidade">Acessibilidade</option>
+                    <option value="correcao">Correção de informação</option>
+                </select>
+                <small class="mensagem-erro" id="erro-assunto"></small>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" aria-describedby="erro-mensagem"></textarea>
+                <small class="mensagem-erro" id="erro-mensagem"></small>
+            </div>
+
+            <button class="botao" type="submit">Validar sugestão</button>
+            <p id="mensagem-status" class="mensagem-status" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
