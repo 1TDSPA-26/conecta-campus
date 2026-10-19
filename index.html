@@ -1,76 +1,88 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conecta Campus</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Campus | Início</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!--
+  RMXXXXXX-NOME COMPLETO
+  RMXXXXXX-NOME COMPLETO
+  -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Conecta Campus página inicial">Conecta Campus</a>
+      <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span>Menu</span>
+        <span class="icone-menu" aria-hidden="true">☰</span>
+      </button>
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="locais.html">Locais</a></li>
+          <li><a href="detalhes.html">Acessibilidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <header class="cabecalho">
-      <div class="container cabecalho-conteudo">
-        <a
-          class="marca"
-          href="index.html"
-          aria-label="Conecta Campus - página inicial"
-          >Conecta Campus</a
-        >
-        <nav aria-label="Navegação principal">
-          <ul class="menu">
-            <li><a aria-current="page" href="./index.html">Início</a></li>
-            <li><a href="./locais.html">Locais</a></li>
-            <li><a href="./detalhes.html">Acessibilidade</a></li>
-          </ul>
-        </nav>
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container">
+        <p class="etiqueta">Informação para circular com autonomia</p>
+        <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+        <p>Consulte localização, horário e recursos de acessibilidade antes de sair.</p>
+        <a class="botao" href="locais.html">Explorar locais</a>
       </div>
-    </header>
+    </section>
 
-    <main id="inicio">
-      <section class="hero" aria-labelledby="titulo-principal">
-        <div class="container hero-conteudo">
-          <p class="etiqueta">Informação para circular com autonomia</p>
-          <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
-          <p class="hero-texto">
-            Consulte localização, horário e recursos de acessibilidade antes de
-            sair.
-          </p>
-          <a class="botao" href="./locais.html">Explorar locais</a>
-        </div>
-      </section>
-      <article class="cartao">
-        <img
-          src="./img/biblioteca-campus.png"
-          alt="Interior da biblioteca com estantes, mesas de estudo e corredor central" />
-        <div class="cartao-conteudo">
-          <p class="cartao-tipo">Estudo</p>
-          <h3>Biblioteca Central</h3>
-          <p>Bloco B, térreo · 8h às 21h</p>
-          <a href="./detalhes.html">Ver detalhes</a>
-        </div>
-      </article>
-    </main>
+    <section class="secao container" aria-labelledby="titulo-destaques">
+      <h2 id="titulo-destaques">Locais em destaque</h2>
+      <div class="lista-cartoes">
+        <article class="cartao">
+          <img src="img/biblioteca.svg" alt="Estantes e mesas de estudo na biblioteca">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Estudo</p>
+            <h3>Biblioteca Central</h3>
+            <p>Bloco B, térreo, das 8h às 21h.</p>
+            <a href="detalhes.html">Ver detalhes da biblioteca</a>
+          </div>
+        </article>
 
-    <footer>
-      <div>
-        <form>
-          <fieldset>
-            <legend>Contato</legend>
+        <article class="cartao">
+          <img src="img/laboratorio.svg" alt="Computadores disponíveis no laboratório de informática">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Tecnologia</p>
+            <h3>Laboratório de Informática</h3>
+            <p>Bloco C, primeiro andar, das 7h às 22h.</p>
+            <a href="locais.html">Consultar informações do laboratório</a>
+          </div>
+        </article>
 
-            <label for="">email:</label>
-            <input type="email" name="email" placeholder="Digite seu email" />
-
-            <label for="">comentário:</label>
-            <textarea
-              name="comentario"
-              placeholder="Digite seu comentário"
-            ></textarea>
-
-            <input type="submit" name="enviar" value="Enviar" />
-          </fieldset>
-        </form>
+        <article class="cartao">
+          <img src="img/rota-acessivel.svg" alt="Rampa com corrimãos indicando uma rota acessível">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Acessibilidade</p>
+            <h3>Rota acessível</h3>
+            <p>Caminho entre a entrada principal e o Bloco B.</p>
+            <a href="detalhes.html#orientacao">Consultar a rota acessível</a>
+          </div>
+        </article>
       </div>
-      <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
+    </div>
+  </footer>
+</body>
 </html>
+
+
