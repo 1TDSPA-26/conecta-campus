@@ -18,7 +18,7 @@
   <header class="cabecalho">
 
     <div class="container cabecalho-conteudo">
-      <a id="marca" class="marca" href="#" aria-label="Conecta Campus página inicial">Conecta Campus</a>
+      <a id="marca" class="marca" href="index.html" aria-label="Conecta Campus página inicial">Conecta Campus</a>
       <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
         <span>Menu</span>
         <span class="icone-menu" aria-hidden="true">☰</span>
@@ -39,7 +39,7 @@
     <section class="hero" aria-labelledby="titulo-principal">
       <div class="container">
         <p class="etiqueta">Informação para circular com autonomia</p>
-        <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+        <h1 onclick="console.log(this.textContent)" id="titulo-principal">Encontre espaços e serviços do campus</h1>
         <p>Consulte localização, horário e recursos de acessibilidade antes de sair.</p>
         <a class="botao" href="locais.html">Explorar locais</a>
       </div>
@@ -86,8 +86,6 @@
       <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
     </div>
   </footer>
-
-
 
 </body>
 
