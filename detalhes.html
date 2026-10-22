@@ -1,72 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta Campus</title>
-
-    <style>
-        
-        header{
-            background-color: rgb(248, 197, 222); 
-            color: rgb(51, 0, 0);
-        }
-
-    </style>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Campus | Acessibilidade</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1> Detalhes </h1>
-        <nav>
-
-            <ul style="list-style-type: square">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./locais.html">Locais</a></li>
-                <li><a href="./detalhes.html">Detalhes</a></li>
-            </ul>
-
-        </nav>
-        <h2> Detalhes </h2>
-    
-    </header>
-    <main>
-        <section>
-            <h2> Conteúdo de página </h2>
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate sequi alias facilis, explicabo sint harum veniam consequatur, suscipit dicta natus, nisi ab laborum? Illo ea cupiditate, perferendis inventore ratione quas optio natus. Totam quibusdam sint minus accusamus aliquid! Delectus porro laboriosam doloribus ea? Quas repudiandae animi nihil asperiores quae?
-            </p>
-            <img src="./img/campus-james_peng-zhejiang-university-3776783_1920.jpg" alt="Campus" width="500" height="300">
-            <a href=""></a>
-
-        </section>
-        <article>
-            <h2> Coisas a parte </h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia voluptate quas voluptatibus, ipsum quidem possimus quaerat quam pariatur suscipit ad, repudiandae nobis aut harum et nesciunt, natus rerum! Quos sit reprehenderit ad eaque. Quod, maxime blanditiis nostrum itaque harum numquam quasi ex distinctio temporibus iusto sed ea omnis eos.</p>
-            <a href=""></a>
-        </article>
-    </main>
-    <footer>
-        <div>
-            <form>
-                <fieldset>
-                    <legend>Contato</legend>
-                
-                    <label for="email">email:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu gmail: ">
-                    
-                    <label for="comentario">Comentário:</label>
-                    <textarea name="comentário" placeholder="Digite aqui seu comentário"></textarea>
-                    <input type="subimit" name="Enviar" value="Enviar">
-                </fieldset>
-
-            </form>
+  <!--
+  RM575985 - Isabelly Viana Chavier Bustamante Sa
+  -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html">Conecta Campus</a>
+      <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span>Menu</span>
+        <span class="icone-menu" aria-hidden="true">☰</span>
+      </button>
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="locais.html">Locais</a></li>
+          <li><a href="detalhes.html" aria-current="page">Acessibilidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="secao container">
+    <article>
+      <p class="etiqueta">Estudo e acessibilidade</p>
+      <h1>Biblioteca Central</h1>
+      <img class="imagem-detalhe" src="img/biblioteca.svg" alt="Estantes e mesas de estudo na biblioteca">
+      <h2>Recursos disponíveis</h2>
+      <ul>
+        <li>Entrada sem degraus pelo corredor norte.</li>
+        <li>Mesas com espaço para cadeira de rodas.</li>
+        <li>Atendimento no térreo.</li>
+      </ul>
+      <section id="orientacao" aria-labelledby="titulo-orientacao">
+        <h2 id="titulo-orientacao">Orientação de chegada</h2>
+        <button class="botao" id="botao-orientacao" type="button" aria-expanded="false" aria-controls="painel-orientacao">Mostrar orientação</button>
+        <div id="painel-orientacao" hidden>
+          <p>Entre pelo portão principal, siga até o Bloco B e utilize a rampa do corredor norte.</p>
         </div>
-        <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-    </footer>
+      </section>
+    </article>
+  </main>
+  <footer class="rodape"><div class="container"><p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p></div></footer>
 </body>
-
 </html>
+
+
