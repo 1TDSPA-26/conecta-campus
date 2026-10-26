@@ -10,9 +10,10 @@ var logo = document.getElementById("marca");
 
 
 //atrelando um evento ao logo
-logo.addEventListener("click", function () {
-  //Mudando o texto do Logo:
-  logo.textContent = "Conecta Campus Alterado";
+logo.addEventListener("click" , function(){
+    //Mudando o texto do Logo:
+    logo.textContent = "Conecta Campus Alterado";
+    logo.href = "#";
 });
 
 
