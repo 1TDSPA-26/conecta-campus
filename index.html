@@ -1,55 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conecta Campus</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header style="background-color: #ee64a9;color: #fff">
-            <h1>Home</h1>
-            <nav>
-                <ol style="list-style: none;">
-                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./locals.html">Locais</a></li>
-                    <li><a href="./detalhes.html">Detalhes</a></li>
-                     <li><a href="./paginas/pagina1.html">Pagina 1</a></li>
-                </ol>
-            </nav>
-        </header>
-        <header></header>
-        <main>
-            <section>
-                <h2>Conteudo da página</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, dignissimos, amet itaque officiis repudiandae totam pariatur nostrum dicta voluptatem praesentium tempore minima, sequi sint recusandae? Tempore atque sit iste, nesciunt, adipisci, sunt numquam est laboriosam quas quo itaque voluptatum praesentium amet provident expedita animi vero dicta assumenda rerum. Ab, ut?</p>
-                <a href="#">mais...</a>
-            </section>
-            <article>
-                <h2>Boleira mata filha</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora officia molestiae suscipit omnis, numquam tenetur aperiam natus! Voluptatibus accusantium repellendus ex alias cupiditate commodi nulla veniam, similique animi atque maiores.</p>
-                <img src="img/01-falkenpost-peabody-institute-1629259_1280.jpg" alt="Campus Oficial" width="300">
-                <a href="#">mais...</a>
-            </article>
-        </main>
-        <footer>
-            <div>
-                <form>
+<html lang="pt-BR">
 
-                    <fieldset>
-                        <legend>Contato</legend>
-                        <label for="">email:</label>
-                        <input type="email"name="email" placeholder="Digite seu email">
-    
-                        <label for="">comentário</label>
-                        <textarea name="comentário" placeholder="Digite seu comentário"></textarea>
-    
-                        <input type="submit" name="enviar" value="Enviar">
-                    </fieldset>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Campus | Início</title>
+  <link rel="stylesheet" href="css/style.css">
 
-                </form>
-            </div>
-            <p>&copy; 2026 - Todos os direitos reservados - Conecta Campus</p>
-        </footer>
-    </body>
+  <!-- <script src="js/script.js" defer></script> -->
+
+  <script src="./js/script.js" defer></script>
+
+
+</head>
+
+<body>
+<!-- RM576189 Stéfany Maria Santana Freitas -->
+
+  <header class="cabecalho">
+
+    <div class="container cabecalho-conteudo">
+      <a id="marca" class="marca" href="index.html" aria-label="Conecta Campus página inicial">Conecta Campus</a>
+      <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span>Menu</span>
+        <span class="icone-menu" aria-hidden="true">☰</span>
+      </button>
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="locais.html">Locais</a></li>
+          <li><a href="detalhes.html">Acessibilidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container">
+        <p class="etiqueta">Informação para circular com autonomia</p>
+        <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+        <p>Consulte localização, horário e recursos de acessibilidade antes de sair.</p>
+        <a class="botao" href="locais.html">Explorar locais</a>
+      </div>
+    </section>
+
+    <section class="secao container" aria-labelledby="titulo-destaques">
+      <h2 id="titulo-destaques">Locais em destaque</h2>
+      <div class="lista-cartoes">
+        <article class="cartao">
+          <img src="img/biblioteca.svg" alt="Estantes e mesas de estudo na biblioteca">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Estudo</p>
+            <h3>Biblioteca Central</h3>
+            <p>Bloco B, térreo, das 8h às 21h.</p>
+            <a href="detalhes.html">Ver detalhes da biblioteca</a>
+          </div>
+        </article>
+
+        <article class="cartao">
+          <img src="img/laboratorio.svg" alt="Computadores disponíveis no laboratório de informática">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Tecnologia</p>
+            <h3>Laboratório de Informática</h3>
+            <p>Bloco C, primeiro andar, das 7h às 22h.</p>
+            <a href="locais.html">Consultar informações do laboratório</a>
+          </div>
+        </article>
+
+        <article class="cartao">
+          <img src="img/rota-acessivel.svg" alt="Rampa com corrimãos indicando uma rota acessível">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Acessibilidade</p>
+            <h3>Rota acessível</h3>
+            <p>Caminho entre a entrada principal e o Bloco B.</p>
+            <a href="detalhes.html#orientacao">Consultar a rota acessível</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="login">
+      <h2>Login</h2>
+      <form id="formulario-contato" novalidate method="get">
+        <fieldset>
+          <legend> Dados de Usuário</legend>
+          <div class="campo-formulario">
+            <label for="nome">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email" 
+            required minlength="9" maxlength="50" placeholder="Digite seu email">
+            <small class="mensagem-erro" id="erro-senha"></small>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" autocomplete="senha" aria-describedby="erro-senha" required placeholder="Digite sua senha">
+            <small class="mensagem-erro" id="erro-senha"></small>
+          </div>
+        
+          <button class="botao" type="submit" id="btnLogin">Login</button>
+          <p id="mensagem-status" class="mensagem-status" role="status" aria-live="polite"></p>
+        </form>
+        </fieldset>
+    </section>
+
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
+    </div>
+  </footer>
+
+
+
+</body>
+
 </html>
