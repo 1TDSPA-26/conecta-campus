@@ -1,20 +1,48 @@
-// "use strict";
+"use strict";
+
+//Objeto do usuário
+let usuario = {
+    email: "jose@gmail.com",
+    senha: "123456"
+};
+
+//Capturamos o botão de login
+const botaoLogin = document.getElementById("btnLogin");
+
+//Atrelar um evento ao botão utilizando a função
+//addEventListener(evento, funçãoAnônima());
+botaoLogin.addEventListener("click", function(evento){
+    evento.preventDefault(); //Evita o comportamento padrão do botão
+    console.log("Quem executou o evento foi: " + evento.target.textContent);
+    console.log("Cliquei!");
+
+
+    const emailTxt = document.getElementById("email").value;
+    const senhaTxt = document.getElementById("senha").value;
+
+    if (emailTxt === usuario.email && senhaTxt === usuario.senha) {
+       window.location.href = "./detalhes.html"; 
+    } else {
+        alert("Usuário ou senha inválidos!");
+        window.location.href = "./index.html";
+    }
+});
 
 
 // alert("Olá Mundo!");
 
 
 //Capturando o elemento em tempo de execução
-var logo = document.getElementById("marca");
+// var logo = document.getElementById("marca");
 
 
 
-//atrelando um evento ao logo
-logo.addEventListener("click" , function(){
-    //Mudando o texto do Logo:
-    logo.textContent = "Conecta Campus Alterado";
-    logo.href = "#";
-});
+// //atrelando um evento ao logo
+// logo.addEventListener("click" , function(){
+//     //Mudando o texto do Logo:
+//     logo.textContent = "Conecta Campus Alterado";
+//     logo.href = "#";
+// });
 
 
 
