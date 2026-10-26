@@ -1,105 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-  <!DOCTYPE html>
-  <html lang="pt-BR">
-    
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Conecta Campus | Início</title>
-      <link rel="stylesheet" href="css/style.css">
-      
-    </head>
-    
-    <body>
-      
-      <!--
-        RMXXXXXX-NOME COMPLETO
-        RMXXXXXX-NOME COMPLETO
-      -->
-      <header class="cabecalho">
-        <div class="container cabecalho-conteudo">
-          <a id="marca" class="marca" href="#" aria-label="Conecta Campus página inicial">Conecta Campus</a>
-          <!--Precisa ter essa semantica na tag, por ser umm botao de envio. o type poser submit, mas button tb é bom-->
-          <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
-            <span>Menu</span>
-            <span class="icone-menu" aria-hidden="true">☰</span>
-          </button>
-          <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
-            <ul class="menu">
-              <li><a href="index.html" aria-current="page">Início</a></li>
-              <li><a href="locais.html">Locais</a></li>
-              <li><a href="detalhes.html">Acessibilidade</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li><a href="integrantes.html">Integrantes</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      
-      <main>
-        <section class="hero" aria-labelledby="titulo-principal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Campus | Início</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- <script src="js/script.js" defer></script> -->
+
+  <script src="./js/script.js" defer></script>
+
+
+</head>
+
+<body>
+  <header class="cabecalho">
+
+    <div class="container cabecalho-conteudo">
+      <a id="marca" class="marca" href="index.html" aria-label="Conecta Campus página inicial">Conecta Campus</a>
+      <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span>Menu</span>
+        <span class="icone-menu" aria-hidden="true">☰</span>
+      </button>
+      <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="locais.html">Locais</a></li>
+          <li><a href="detalhes.html">Acessibilidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container">
+        <p class="etiqueta">Informação para circular com autonomia</p>
+        <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+        <p>Consulte localização, horário e recursos de acessibilidade antes de sair.</p>
+        <a class="botao" href="locais.html">Explorar locais</a>
+      </div>
+    </section>
+
+    <section class="secao container" aria-labelledby="titulo-destaques">
+      <h2 id="titulo-destaques">Locais em destaque</h2>
+      <div class="lista-cartoes">
+        <article class="cartao">
+          <img src="img/biblioteca.svg" alt="Estantes e mesas de estudo na biblioteca">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Estudo</p>
+            <h3>Biblioteca Central</h3>
+            <p>Bloco B, térreo, das 8h às 21h.</p>
+            <a href="detalhes.html">Ver detalhes da biblioteca</a>
+          </div>
+        </article>
+
+        <article class="cartao">
+          <img src="img/laboratorio.svg" alt="Computadores disponíveis no laboratório de informática">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Tecnologia</p>
+            <h3>Laboratório de Informática</h3>
+            <p>Bloco C, primeiro andar, das 7h às 22h.</p>
+            <a href="locais.html">Consultar informações do laboratório</a>
+          </div>
+        </article>
+
+        <article class="cartao">
+          <img src="img/rota-acessivel.svg" alt="Rampa com corrimãos indicando uma rota acessível">
+          <div class="cartao-conteudo">
+            <p class="etiqueta">Acessibilidade</p>
+            <h3>Rota acessível</h3>
+            <p>Caminho entre a entrada principal e o Bloco B.</p>
+            <a href="detalhes.html#orientacao">Consultar a rota acessível</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="login">
+      <!DOCTYPE html>
+      <html lang="pt-BR">
+
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conecta Campus | Início</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- <script src="js/script.js" defer></script> -->
+
+        <script src="./js/script.js" defer></script>
+
+
+      </head>
+
+      <body>
+        <header class="cabecalho">
+
+          <div class="container cabecalho-conteudo">
+            <a id="marca" class="marca" href="index.html" aria-label="Conecta Campus página inicial">Conecta Campus</a>
+            <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false"
+              aria-controls="menu-principal">
+              <span>Menu</span>
+              <span class="icone-menu" aria-hidden="true">☰</span>
+            </button>
+            <nav id="menu-principal" class="navegacao-principal" aria-label="Navegação principal">
+              <ul class="menu">
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="locais.html">Locais</a></li>
+                <li><a href="detalhes.html">Acessibilidade</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <main>
+          <section class="hero" aria-labelledby="titulo-principal">
+            <div class="container">
+              <p class="etiqueta">Informação para circular com autonomia</p>
+              <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
+              <p>Consulte localização, horário e recursos de acessibilidade antes de sair.</p>
+              <a class="botao" href="locais.html">Explorar locais</a>
+            </div>
+          </section>
+
+          <section class="secao container" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques">Locais em destaque</h2>
+            <div class="lista-cartoes">
+              <article class="cartao">
+                <img src="img/biblioteca.svg" alt="Estantes e mesas de estudo na biblioteca">
+                <div class="cartao-conteudo">
+                  <p class="etiqueta">Estudo</p>
+                  <h3>Biblioteca Central</h3>
+                  <p>Bloco B, térreo, das 8h às 21h.</p>
+                  <a href="detalhes.html">Ver detalhes da biblioteca</a>
+                </div>
+              </article>
+
+              <article class="cartao">
+                <img src="img/laboratorio.svg" alt="Computadores disponíveis no laboratório de informática">
+                <div class="cartao-conteudo">
+                  <p class="etiqueta">Tecnologia</p>
+                  <h3>Laboratório de Informática</h3>
+                  <p>Bloco C, primeiro andar, das 7h às 22h.</p>
+                  <a href="locais.html">Consultar informações do laboratório</a>
+                </div>
+              </article>
+
+              <article class="cartao">
+                <img src="img/rota-acessivel.svg" alt="Rampa com corrimãos indicando uma rota acessível">
+                <div class="cartao-conteudo">
+                  <p class="etiqueta">Acessibilidade</p>
+                  <h3>Rota acessível</h3>
+                  <p>Caminho entre a entrada principal e o Bloco B.</p>
+                  <a href="detalhes.html#orientacao">Consultar a rota acessível</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="login">
+            <h2>Login</h2>
+            <form id="formulario-contato" novalidate method="GET">
+              <fieldset>
+                <legend>Dados do Usuário</legend>
+
+                <div class="campo-formulario">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email"
+                    required minlength="9" maxlength="50" placeholder="Digite seu email">
+                  <small class="mensagem-erro" id="erro-email"></small>
+                </div>
+
+                <div class="campo-formulario">
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" name="senha" autocomplete="senha" aria-describedby="erro-senha"
+                    placeholder="Senha">
+                  <small class="mensagem-erro" id="erro-senha"></small>
+                </div>
+
+                <button class="botao" type="submit" id="btnLogin">Login</button>
+                <p id="mensagem-status" class="mensagem-status" role="status" aria-live="polite"></p>
+              </fieldset>
+            </form>
+          </section>
+
+        </main>
+
+        <footer class="rodape">
           <div class="container">
-            <p class="etiqueta">Informação para circular com autonomia</p>
-            <h1 id="titulo-principal">Encontre espaços e serviços do campus</h1>
-            <p>Consulte localização, horário e recursos de acessibilidade antes de sair.</p>
-            <a class="botao" href="locais.html">Explorar locais</a>
+            <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
           </div>
-        </section>
-        
-        <section class="secao container" aria-labelledby="titulo-destaques">
-          <h2 id="titulo-destaques">Locais em destaque</h2>
-          <div class="lista-cartoes">
-            <article class="cartao">
-              <img src="img/biblioteca.svg" alt="Estantes e mesas de estudo na biblioteca">
-              <div class="cartao-conteudo">
-                <p class="etiqueta">Estudo</p>
-                <h3>Biblioteca Central</h3>
-                <p>Bloco B, térreo, das 8h às 21h.</p>
-                <a href="detalhes.html">Ver detalhes da biblioteca</a>
-              </div>
-            </article>
-            
-            <article class="cartao">
-              <img src="img/laboratorio.svg" alt="Computadores disponíveis no laboratório de informática">
-              <div class="cartao-conteudo">
-                <p class="etiqueta">Tecnologia</p>
-                <h3>Laboratório de Informática</h3>
-                <p>Bloco C, primeiro andar, das 7h às 22h.</p>
-                <a href="locais.html">Consultar informações do laboratório</a>
-              </div>
-            </article>
-            
-            <article class="cartao">
-              <img src="img/rota-acessivel.svg" alt="Rampa com corrimãos indicando uma rota acessível">
-              <div class="cartao-conteudo">
-                <p class="etiqueta">Acessibilidade</p>
-                <h3>Rota acessível</h3>
-                <p>Caminho entre a entrada principal e o Bloco B.</p>
-                <a href="detalhes.html#orientacao">Consultar a rota acessível</a>
-              </div>
-            </article>
+        </footer>
+
+
+
+      </body>
+
+      </html>
+      <h2>Login</h2>
+      <form id="formulario-contato" novalidate>
+        <fieldset>
+          <legend>Dados do Usuário</legend>
+
+          <div class="campo-formulario">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" aria-describedby="erro-nome">
+            <small class="mensagem-erro" id="erro-nome"></small>
           </div>
-        </section>
-      </main>
-      
-      <footer class="rodape">
-        <div class="container">
-          <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
-        </div>
-      </footer>
-      <script>
-        let nome = "José";
-      </script>
-                <scriptsrc= "NAO COLOQUE "./jsSCRIPT.js" porque tem o script escrito no caminho."></scriptsrc=>
-                <script src="./js/script.js" defer></script>
-                <!-- <script src="js/script.js" defer></script> -->
-                
-              </body>
-              
-              
-              </html>
-              >>>>>>> 8e2e2d1423590be9a5e17827d50ec1fa44778f6e
-              
-              <!--JAVA INLINE (NAO USAR no java s do cliente): onclick="console.log(this), não esta em tempo  deonconsole log funciona em seguida do alert-->
-              <!--onclick="console.log(this.textContent)-->
-              <!--O JS <script> deve permanecer no head, esta na doc do JS-->
+
+          <div class="campo-formulario">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email">
+            <small class="mensagem-erro" id="erro-email"></small>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" aria-describedby="erro-assunto">
+              <option value="">Selecione uma opção</option>
+              <option value="novo-local">Novo local</option>
+              <option value="acessibilidade">Acessibilidade</option>
+              <option value="correcao">Correção de informação</option>
+            </select>
+            <small class="mensagem-erro" id="erro-assunto"></small>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" aria-describedby="erro-mensagem"></textarea>
+            <small class="mensagem-erro" id="erro-mensagem"></small>
+          </div>
+
+          <button class="botao" type="submit">Validar sugestão</button>
+          <p id="mensagem-status" class="mensagem-status" role="status" aria-live="polite"></p>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
