@@ -1,54 +1,20 @@
-"use strict";
-
-//Objeto do usuário
-let usuario = {
-    email: "jose@email.com",
-    senha: "123456"
-}
-
-
-//Capturamos o botão de login
-const botaoLogin = document.getElementById("btnLogin");
-
-//Atrelar um evento ao botão utilizando a função
-//addEventListener(evento, funçãoAnônima());
-botaoLogin.addEventListener("click", function (evento) {
-    evento.preventDefault();
-    console.log("Quem executou o evento: ", evento.target.textContent)
-    console.log("Cliquei!");
-
-    //Criando o início da validação!
-    //Recuperando os campos email e senha
-    const emailTxt = document.getElementById("email");
-    const senhaTxt = document.getElementById("senha");
-
-    if (emailTxt === usuario.email && senhaTxt === usuario.senha) {
-        window.location.href = "./detalhes.html";
-    } else {
-        alert("Nome de usuário ou senha incorretos!");
-        window.location.href = "./index.html";
-    }
-
-});
-
-
-
+// "use strict";
 
 
 // alert("Olá Mundo!");
 
 
 //Capturando o elemento em tempo de execução
-// var logo = document.getElementById("marca");
+var logo = document.getElementById("marca");
 
 
 
-// //atrelando um evento ao logo
-// logo.addEventListener("click" , function(){
-//     //Mudando o texto do Logo:
-//     logo.textContent = "Conecta Campus Alterado";
-//     logo.href = "#";
-// });
+//atrelando um evento ao logo
+logo.addEventListener("click" , function(){
+    //Mudando o texto do Logo:
+    logo.textContent = "Conecta Campus Alterado";
+    logo.href = "#";
+});
 
 
 
