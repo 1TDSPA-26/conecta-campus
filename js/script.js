@@ -19,16 +19,18 @@ const botaoLogin = document.getElementById("btnLogin");
 
         //Criando o inicio da validacao!
         //Recuperando os campos email e senha
-        const emailTxt = document.getElementById("email");
-        const senhaTxt = document.getElementById("senha");
+        const emailTxt = document.getElementById("email").value;
+        const senhaTxt = document.getElementById("senha").value;
 
-        if (emailTxt === usuario.email && senhaTxt === usuario.senha){
+        if (emailTxt === usuario.email && senhaTxt === usuario.senha) {
             window.location.href = "./detalhes.html";
-        }else{
-            alert("Nome do usuario ou senha incorretos!);
+        } else {
+            alert("Nome de usuário ou senha incorretos!");
             window.location.href = "./index.html";
         }
-    });//Colocar dentro da {} a ação EVENTO "botao login apertado"
+
+    });
+;//Colocar dentro da {} a ação EVENTO "botao login apertado"
 
 
 
