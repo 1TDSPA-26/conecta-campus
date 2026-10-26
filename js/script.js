@@ -13,6 +13,7 @@ var logo = document.getElementById("marca");
 logo.addEventListener("click", function () {
     //Mudando o texto do Logo:
     logo.textContent = "Conecta Campus Alterado";
+    logo.href = "#";
 });
 
 
