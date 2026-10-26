@@ -79,6 +79,33 @@
         </article>
       </div>
     </section>
+
+    <section class="login">
+      <h2>Login</h2>
+      <form id="formulario-contato" novalidate>
+        <fieldset>
+          <legend>Dados do Usuário</legend>
+
+          <div class="campo-formulario">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email" required
+              minlength="9" maxlength="50" placeholder="Digite seu email">
+            <small class="mensagem-erro" id="erro-email"></small>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" autocomplete="senha" aria-describedby="erro-senha" required
+              placeholder="Digite sua senha">
+            <small class="mensagem-erro" id="erro-senha"></small>
+          </div>
+
+          <button class="botao" type="submit" id="btnLogin">Login</button>
+          <p id="mensagem-status" class="mensagem-status" role="status" aria-live="polite"></p>
+        </fieldset>
+      </form>
+    </section>
+
   </main>
 
   <footer class="rodape">
@@ -86,6 +113,8 @@
       <p>Conecta Campus v0.5 | <span data-ano-atual>2026</span></p>
     </div>
   </footer>
+
+
 
 </body>
 
