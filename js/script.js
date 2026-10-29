@@ -1,16 +1,35 @@
-// "use strict";
+"use strict";
 
-// alert("Olá mundo!")
+//Objeto do usuário
+let usuario = {
+    email: "jose@email.com",
+    senha: "123456"
+}
 
-// Capturando o elemento em tempo de execução
-var logo = document.getElementById("marca");
 
-// Atrelando um evento ao logo
-logo.addEventListener("click", function(){
-  // Mudando o texto da logo
-  logo.textContent = "Conecta Campus Alterado";
+//Capturamos o botão de login
+const botaoLogin = document.getElementById("btnLogin");
+
+//Atrelar um evento ao botão utilizando a função
+//addEventListener(evento, funçãoAnônima());
+botaoLogin.addEventListener("click", function (evento) {
+    evento.preventDefault();
+    console.log("Quem executou o evento: ", evento.target.textContent)
+    console.log("Cliquei!");
+
+    //Criando o início da validação!
+    //Recuperando os campos email e senha
+    const emailTxt = document.getElementById("email").value;
+    const senhaTxt = document.getElementById("senha").value;
+
+    if (emailTxt === usuario.email && senhaTxt === usuario.senha) {
+        window.location.href = "./detalhes.html";
+    } else {
+        alert("Nome de usuário ou senha incorretos!");
+        window.location.href = "./index.html";
+    }
+
 });
-
 
 // // TODO v0.5: selecionar #botao-menu, #menu-principal e .icone-menu.
 // // TODO v0.5: alternar a classe menu-aberto e atualizar aria-expanded.
